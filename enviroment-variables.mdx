@@ -1,0 +1,44 @@
+---
+title: "Environment Variables"
+description: "All enviroment variables explained"
+---
+
+## Required variables
+
+`MONGO_URI`
+The MONGO_URI is the connection string to your MongoDB database. You can get this from your MongoDB Atlas dashboard or from your local MongoDB instance.
+
+`BOT_TOKEN`
+The BOT_TOKEN is the token of your Discord bot. You can get this from the Discord Developer Portal.
+
+`NAME`
+The NAME is what you want to call your Momentum instance.
+
+`PORT`
+The PORT is the port you want to run Momentum on. The default is 8080.
+
+`GAME_SERVERS`
+This is a list of ip adresses of possible game servers used for matchmaking.
+
+`LINK_SECRET`
+This is the api key used to connect to the LINK matchmaking service. You can get one (for free) from the [LINK website](https://link.nexusfn.net).
+
+## Optional variables
+
+`USE_S3`
+This is used to enable or disable the use of S3 for storing user settings. The default is false.
+
+`S3_BUCKET_NAME`
+This is the name of the S3 bucket you want to use. This is only used if USE_S3 is true.
+
+`S3_ACCESS_KEY_ID`
+This is the access key id of the S3 bucket you want to use. This is only used if USE_S3 is true.
+
+`S3_SECRET_ACCESS_KEY`
+This is the secret access key of the S3 bucket you want to use. This is only used if USE_S3 is true.
+
+`USE_REDIS`
+This is used to enable or disable the use of Redis for caching and storing user tokens. The default is false.
+
+`REDIS_URL`
+This is the url of the Redis instance you want to use. This is only used if USE_REDIS is true.

@@ -1,0 +1,56 @@
+---
+title: "Getting Started"
+description: "Step by step guide to getting started with Momentum"
+---
+
+# Getting Started
+
+What you will **need**:
+
+- [Node.js](https://nodejs.org/en/) (v18 or higher)
+- [MongoDB](https://www.mongodb.com/try/download/community) (latest)
+- [LINK API Key](https://link.nexusfn.net) (Required for Matchmaking)
+- [Discord Bot](https://discord.com/developers/applications) (Required for Discord bot)
+
+What is **optional**:
+
+- [Redis](https://redis.io/) (latest) (For caching and fast token storing)
+- [R2/S3](https://cloudflare.com) (More reliable and secure storage for user settings)
+
+## Windows
+
+1. Download the latest release from official GitHub repository from [here](https://github.com/Nexus-FN/Momentum/)
+
+![GitHub page](https://cdn.nexusfn.net/file/2023/06/msedge_Q8vBKeEifE.png)
+
+2. Extract the zip file to a folder of your choice
+
+3. Rename `.env.example` to `.env` and fill in the **required** fields (All enviroment variables are explained [here](/enviroment-variables))
+
+![.env file](https://cdn.nexusfn.net/file/2023/06/Code_JYhpRCIrMB.png)
+
+4. Run the `install_packages.bat` file
+
+5. Run the `start.bat` file
+
+**Congratulations! You have successfully started Momentum!**
+
+## Linux
+
+Now to Linux, should be easy enough.
+
+1. Execute the following commands
+
+```bash
+git clone https://github.com/Nexus-FN/Momentum
+cd Momentum
+npm install
+```
+
+2. Rename `.env.example` to `.env` and fill in the **required** fields (All enviroment variables are explained [here](/enviroment-variables))
+
+![.env file](https://cdn.nexusfn.net/file/2023/06/Code_JYhpRCIrMB.png)
+
+3. Run the `npm start` command
+
+**Congratulations! You have successfully started Momentum!**
